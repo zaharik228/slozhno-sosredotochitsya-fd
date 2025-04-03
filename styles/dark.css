@@ -5,10 +5,6 @@
 */
 
 :root.theme-dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
   --main-text-color: var(--pink_dark-theme, #F1B2CE); 
   --accent-text-color: var(--black_dark-theme, #000028); 
   --sub-accent-text-color: var(--red_dark-theme, #FF0070); 
