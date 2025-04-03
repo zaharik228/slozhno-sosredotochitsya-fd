@@ -2,3 +2,23 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --pink_dark-theme: #F1B2CE; 
+  --black_dark-theme: #000028; 
+  --red_dark-theme: #FF0070; 
+  --violet_dark-theme: #FF007066; 
+  --fucsia_dark-theme: #DB00FF; 
+  --pink_light-theme: #FFF1F7; 
+  --grey-pink_light-theme: #FFC2E6; 
+  --dark-pink_light-theme: #FF8DCB; 
+  --grey_light-theme: #353430; 
+  --light-black_dark-theme: #32312D66;
+  --main-gap: 10px; 
+  --sections-gap: 50px; 
+  --margin-block-main-section: 40px; 
+  --padding-inline-page: 10px; 
+  --text-block-gap: 10px; 
+  --content-section-gap: 20px;  
+  --pictures-list-gap: 10px; 
+}
+--main-font-family: 'IBM Plex mono', monospace;

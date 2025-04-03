@@ -9,6 +9,31 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --main-text-color: var(--pink_dark-theme, #F1B2CE); 
+  --accent-text-color: var(--black_dark-theme, #000028); 
+  --sub-accent-text-color: var(--red_dark-theme, #FF0070); 
+  --bg-color-accent-text: var(--red_dark-theme, #FF0070); 
+  --heading-text-color: var(--fucsia_dark-theme, #DB00FF); 
+  --main-bg-color: var(--black_dark-theme, #000028); 
+  --border-color-pseudo: var(--red_dark-theme, #FF0070); 
+  --border-color-hover-button: var(--violet_dark-theme, #FF007066); 
+}
+
+@media (prefers-color-scheme: dark) { 
+  :root { 
+    --main-text-color: var(--pink_dark-theme, #F1B2CE); 
+    --accent-text-color: var(--black_dark-theme, #000028); 
+    --sub-accent-text-color: var(--red_dark-theme, #FF0070); 
+    --bg-color-accent-text: var(--red_dark-theme, #FF0070); 
+    --heading-text-color: var(--fucsia_dark-theme, #DB00FF); 
+    --main-bg-color: var(--black_dark-theme, #000028); 
+    --border-color-pseudo: var(--red_dark-theme, #FF0070); 
+    --border-color-hover-button: var(--violet_dark-theme, #FF007066); 
+  } 
+
+  .page {  
+    background-image: url(../images/cover-image-dark.png); 
+  } 
 }
 
 .theme-dark .page {
