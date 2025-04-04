@@ -11,10 +11,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: grid;
 }
 
 .header {
   height: 100vh;
+  min-height: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   justify-items: end;
@@ -123,6 +125,7 @@
 }
 
 .header__theme-menu-button:focus {
+  outline: none;
   border-top: transparent;
   border-left: transparent;
   border-right: transparent;
@@ -176,7 +179,6 @@
   color: var(--accent-text-color);
   background-color: var(--bg-color-accent-text);
   max-width: 355px;
-  height: 117px;
   margin: 0 10px;
   margin-bottom: 10px;
 }
@@ -191,7 +193,6 @@
 @media (width >= 1024px) {
   .section__title {
     max-width: 491px;
-    max-height: 71px;
   }
 }
 
@@ -234,7 +235,6 @@
 @media (width >= 768px) {
   .what {
     margin: 0 10px;
-    padding-top: 10px;
   }
 }
 
@@ -243,7 +243,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin: 0 10px;
-    padding-top: 10px;
   }
 }
 
@@ -278,7 +277,7 @@
 
 .content-section__title {
   font-size: 18px;
-  color: var(--bg-color-accent-text);
+  color: var(--sub-accent-text-color);
   margin-bottom: 20px;
   font-weight: 700;
   max-width: 400px;
@@ -318,12 +317,6 @@
   margin-left: 10px;
 }
 
-@media (width >= 1024px) {
-  .text-block__title {
-    height: 1.3em;
-  }
-}
-
 .text-block__subtitle {
   margin: 10px;
   font-weight: 400;
@@ -332,6 +325,10 @@
 .text-block__content {
   margin: 0 10px 20px 10px;
   color: var(--main-text-color);
+}
+
+.gap-fix {
+  margin-bottom: 0px;
 }
 
 .text__link {
@@ -344,27 +341,20 @@
 }
 
 .text__link:focus {
+  outline: none;
   border: 1px solid var(--main-text-color);
 }
 
 .content {
   display: grid;
-  gap: 40px;
+  gap: 50px;
+  margin: 40px 0;
 }
 
 @media (width >= 768px) {
   .content {
-    gap: 60px;
-  }
-}
-
-.mb-10 {
-  margin-bottom: 10px;
-}
-
-@media (width >= 768px) {
-  .gallery {
-    padding-top: 8px;
+    gap: 80px;
+    margin: 60px 0;
   }
 }
 
@@ -394,54 +384,43 @@
   
 }
 
-.sunset {
+.image {
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
   object-position: center;
+}
+
+.sunset {
+
   grid-area: sunset;
 }
 
 .icecream {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-  object-position: center;
   grid-area: icecream;
 }
 
 
 .tape {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-  object-position: center;
   grid-area: tape;
 }
 
 
 
 .books {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-  object-position: center;
   grid-area: books;
 }
 
 
 
 .street {
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-  object-position: center;
   grid-area: street;
 }
 
  
 .footer {
 height: 100vh;
+min-height: 668px;
 position: relative;
 display: grid;
 justify-content: center;
